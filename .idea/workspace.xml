@@ -2,46 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d7bf713-f62d-4514-9c06-8385e161556c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../1768/.idea/1768.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/commn/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/commn/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/commn/driver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/pages/fuli_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/pages/jingpin_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/pages/main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/pages/search_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/pages/update_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/test/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../1768/test/test_mainpage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../seleniumDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/.idea/xueqiuAppium.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/driver/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/driver/appium_driver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/pages/basepage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/pages/mainpage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/pages/searchpage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PycharmProjects/xueqiuAppium/test/searchpage_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/appiumpython/selenium1768/testCases/game_yaoyiyao_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/appiumpython/selenium1768/testCases/game_yaoyiyao_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/appiumpython/selenium1768/testCases/pytest_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/appiumpython/selenium1768/testCases/pytest_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/leetcode/checkPerfectNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/leetcode/checkPerfectNumber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/leetcode/countSmaller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/leetcode/countSmaller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/leetcode/poorPigs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/leetcode/poorPigs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/leetcode/yanghui.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/leetcode/yanghui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PycharmProjects/untitled/pythonselenium/beforgame.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PycharmProjects/untitled/pythonselenium/beforgame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hogworz/HomeWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hogworz/HomeWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto1768.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/game.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/game.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/GamePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/YamlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/YamlConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,21 +22,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="95">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,10 +36,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/YamlConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="76">
+              <caret line="19" column="38" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,10 +48,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/YamlConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            <state relative-caret-position="152">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,41 +60,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar!/org/yaml/snakeyaml/Yaml.class">
+        <entry file="jar://D:/JAVA/jdk/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="213" column="17" selection-start-line="213" selection-start-column="17" selection-end-line="213" selection-end-column="17" />
+            <state relative-caret-position="110">
+              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar!/org/yaml/snakeyaml/constructor/Constructor.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/CommnPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+            <state relative-caret-position="247">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/config/game.yaml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestYaml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/JAVA/jdk/src.zip!/java/lang/Class.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
+            <state relative-caret-position="114">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,17 +95,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="95">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/GamePage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameCrazyStrunk.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameBiYiBi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/game.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -166,20 +138,26 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/GamePahe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/config/game.yaml" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/YamlConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CommnPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/GameCrazyStrunk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/GameBiYiBi.java" />
+        <option value="$PROJECT_DIR$/target/test-classes/game.yaml" />
+        <option value="$PROJECT_DIR$/src/test/java/TestYaml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java" />
       </list>
     </option>
   </component>
@@ -200,45 +178,96 @@
         <subPane>
           <expand>
             <path>
-              <item name="Auto1768" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Auto1768" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Auto1768" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Auto1768" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Auto1768" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552984994813" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hogworz/AppimuTest" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553068114357" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AutoProject\JAVA_Auto1768\target\test-classes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AutoProject\JAVA_Auto1768\target\classes\util" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -251,6 +280,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestYaml.testYaml (1)">
+    <configuration name="TestYaml.testYaml (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Auto1768" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestYaml" />
+      <option name="METHOD_NAME" value="testYaml" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestYaml.testYaml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Auto1768" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestYaml" />
+      <option name="METHOD_NAME" value="testYaml(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestYaml.testYaml (1)" />
+        <item itemvalue="JUnit.TestYaml.testYaml" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -265,26 +322,60 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 14h 54m 33s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 14h 56m 08s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 15h 08m 49s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 15h 11m 46s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 15h 12m 00s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 15h 14m 40s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 15h 15m 23s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 15h 15m 47s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 15h 16m 30s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestYaml_testYaml_(1) - 2019.03.20 at 15h 42m 45s.xml">
+      <configuration name="TestYaml.testYaml (1)" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.36157337" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.37897125" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.4147541" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3295082" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -294,6 +385,11 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="D:" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0.jar!/org/openqa/selenium/WebDriver.class">
@@ -337,65 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GamePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JAVA/jdk/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar!/org/yaml/snakeyaml/constructor/Constructor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-          <folding>
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar!/org/yaml/snakeyaml/Yaml.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1425">
@@ -406,24 +443,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/config/game.yaml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="266">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Auto1768.iml" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar!/org/yaml/snakeyaml/Yaml.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="213" column="17" selection-start-line="213" selection-start-column="17" selection-end-line="213" selection-end-column="17" />
+        <state relative-caret-position="3116">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar!/org/yaml/snakeyaml/constructor/Constructor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JAVA/jdk/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3667">
+          <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JAVA/jdk/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/util/game.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar!/org/yaml/snakeyaml/reader/StreamReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="159" column="38" selection-start-line="159" selection-start-column="38" selection-end-line="159" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JAVA/jdk/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="1307" column="13" selection-start-line="1307" selection-start-column="13" selection-end-line="1307" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GamePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CommnPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameBiYiBi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameCrazyStrunk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/game.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/YamlConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="76">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestYaml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JAVA/jdk/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

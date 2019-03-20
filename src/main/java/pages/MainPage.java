@@ -3,7 +3,7 @@ package pages;
 import driver.Driver;
 import org.openqa.selenium.By;
 
-/*
+/**
  启动app主页：1768
  */
 public class MainPage {

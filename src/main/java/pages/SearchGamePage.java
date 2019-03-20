@@ -2,6 +2,8 @@ package pages;
 
 import driver.Driver;
 import org.openqa.selenium.By;
+import util.YamlConfig;
+
 import java.util.concurrent.TimeUnit;
 
 public class SearchGamePage {
@@ -27,7 +29,8 @@ public class SearchGamePage {
         Driver.getDriver().findElement(enterGame).click();//最终跳转入口
         Object gamePage = null;
         try {
-            gamePage =  Class.forName("pages.GameYaoYiYao").newInstance();
+            String gameName = YamlConfig.getGameMapClass(keyword).toString();
+            gamePage =  Class.forName("pages."+gameName).newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }
