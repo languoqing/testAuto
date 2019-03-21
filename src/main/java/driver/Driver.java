@@ -16,13 +16,13 @@ public class Driver {
         desiredCapabilities.setCapability("platformName", "ANDROID");
         desiredCapabilities.setCapability("platformVersion", "8.1.0");
         desiredCapabilities.setCapability("deviceName", "vivo Y85A");
-        desiredCapabilities.setCapability("app", "com.xueqiu.android");
+        desiredCapabilities.setCapability("app", "com.pingan.gamehall");
         desiredCapabilities.setCapability("noReset", true);
         desiredCapabilities.setCapability("udid", "7bff6865");
-        desiredCapabilities.setCapability("appActivity", ".view.WelcomeActivityAlias ");
+        desiredCapabilities.setCapability("appActivity", "com.pingan.gamehall.MainActivity");
         URL remoteUrl = null;
         try {
-            remoteUrl = new URL("http://172.21.12.105:4723/wd/hub");
+            remoteUrl = new URL("http://localhost:4723/wd/hub");
         }catch (MalformedURLException a){
             System.out.println(a);
         }
