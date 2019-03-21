@@ -2,17 +2,18 @@ package pages;
 
 import driver.Driver;
 import org.openqa.selenium.By;
+import util.WaitElement;
 import util.YamlConfig;
 
 import java.util.concurrent.TimeUnit;
 
 public class SearchGamePage {
     //搜素点击框
-    private  By keyWordInput = By.className("mod_search");
+    private  By keyWordInput = By.id("j_mod_search");//"//*[@id='j_mod_search']"
     //搜索结果展示
-    private By inputResult = By.xpath("//*[@class='s-r-list']/li[1]");
+    private By inputResult = By.id("mod-s-result");
     //搜索游戏入口
-    private By enterGame = By.xpath("//*[@class='read_search']/li[1]");
+    private By enterGame = By.xpath("read_search");
 
 //    public List showGames(String keyword){
 //        Driver.getDriver().findElement(keyWordInput).sendKeys(keyword);
@@ -24,7 +25,7 @@ public class SearchGamePage {
 
     public Object goGamePage(String keyword){
         Driver.getDriver().findElement(keyWordInput).sendKeys(keyword);
-        Driver.getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        WaitElement.waitShowElement();
         Driver.getDriver().findElement(inputResult).click();//点击搜索结果
         Driver.getDriver().findElement(enterGame).click();//最终跳转入口
         Object gamePage = null;
