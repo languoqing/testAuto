@@ -1,19 +1,18 @@
 package pages;
 
 import driver.Driver;
+import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
-import util.WaitElement;
+import util.Fuctions;
 import util.YamlConfig;
-
-import java.util.concurrent.TimeUnit;
 
 public class SearchGamePage {
     //搜素点击框
-    private  By keyWordInput = By.id("j_mod_search");//"//*[@id='j_mod_search']"
+    private  By keyWordInput = By.xpath("//*[@text='请输入游戏名称']");//"//*[@id='j_mod_search']"
     //搜索结果展示
     private By inputResult = By.id("mod-s-result");
     //搜索游戏入口
-    private By enterGame = By.xpath("read_search");
+    private By enterGame = By.id("read_search");
 
 //    public List showGames(String keyword){
 //        Driver.getDriver().findElement(keyWordInput).sendKeys(keyword);
@@ -24,10 +23,15 @@ public class SearchGamePage {
 
 
     public Object goGamePage(String keyword){
+
+
         Driver.getDriver().findElement(keyWordInput).sendKeys(keyword);
-        WaitElement.waitShowElement();
-        Driver.getDriver().findElement(inputResult).click();//点击搜索结果
-        Driver.getDriver().findElement(enterGame).click();//最终跳转入口
+        AndroidElement resultElement = Driver.getDriver().findElement(inputResult);
+        Fuctions.waitShowElement(2);
+        resultElement.click();//点击搜索结果
+        AndroidElement gameShowElement = Driver.getDriver().findElement(enterGame);
+        Fuctions.waitShowElement(2);
+        gameShowElement.click();//最终跳转入口
         Object gamePage = null;
         try {
             String gameName = YamlConfig.getGameMapClass(keyword).toString();

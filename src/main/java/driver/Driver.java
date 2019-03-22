@@ -20,6 +20,9 @@ public class Driver {
         desiredCapabilities.setCapability("noReset", true);
         desiredCapabilities.setCapability("udid", "7bff6865");
         desiredCapabilities.setCapability("appActivity", "com.pingan.gamehall.MainActivity");
+        //解决sendkeys方法无法输入中文
+        desiredCapabilities.setCapability("unicodeKeyboard", true);//使用 Unicode 输入法
+        desiredCapabilities.setCapability("resetKeyboard", true);  //重置输入法到原有状态
         URL remoteUrl = null;
         try {
             remoteUrl = new URL("http://localhost:4723/wd/hub");

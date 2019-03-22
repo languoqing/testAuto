@@ -3,19 +3,17 @@ package pages;
 import driver.Driver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
-
-import java.util.concurrent.TimeUnit;
+import util.Fuctions;
 
 public class CommnPage {
 
     /**
      * 游戏过渡页
      */
-
-    static By goGamePage = By.xpath(".//*[@class='immediately']/a");
+    public static By goGamePage = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[1]/android.view.View[2]/android.view.View[2]");
     public static void outTranPage(){
         AndroidElement show = Driver.getDriver().findElement(goGamePage);
-        Driver.getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Fuctions.waitShowElement(2);
         show.click();
     }
 
