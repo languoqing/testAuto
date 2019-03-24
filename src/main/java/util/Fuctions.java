@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class Fuctions {
 
     /**
-     * 等待元素显示，统一5ssec
+     * 等待元素显示，统一5sec
      */
     public static void waitShowElement(int sec){
         Driver.getDriver().manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);

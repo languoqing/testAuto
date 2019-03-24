@@ -34,13 +34,28 @@ public class GameYaoYiYao {
     By rankListBtn = By.id("inpage");
     //排行榜页面
     By rankPage = By.id("Ranking");
+    //福袋奖池金额
+    By prizeAmount = By.id("Cumulative");
+    //充值按钮
+    By rechargeBtn = By.xpath("//*[@text='充']");
+    //充值弹框
+    By rechargePage = By.id("FuPurse");
+    //充值按钮
+    By rechargeAmount10 = By.xpath("//*[@text='10元']");
+    By rechargeAmount50 = By.xpath("//*[@text='50元']");
+    By rechargeAmount100 = By.xpath("//*[@text='100元']");
+    By rechargeAmount500 = By.xpath("//*[@text='500元']");
+    //充值输入框
+    By rechargeInput = By.id("writeChong");
+    //跳转充值按钮
+    By goRecharge = By.id("goChong");
 
     /**
      * 点击余额按钮，展示余额页面
-     * @return
+     * @return Boolean
      */
     public boolean clikAccountBlance(){
-        Fuctions.waitShowElement(1);
+        Fuctions.waitShowElement(2);
         //把页面往下拉
         SwipePage.downSwipe();
         AndroidElement elementAccouont = Driver.getDriver().findElement(accountBlanceBtn);
@@ -51,7 +66,7 @@ public class GameYaoYiYao {
 
     /**
      * 在余额展示页面关闭展示，点击空白处
-     * @return
+     * @return Boolean
      */
     public boolean clickCloseAccountBlance(){
         Driver.getDriver().findElement(By.id("Cumulative")).click();//点击空白处
@@ -60,7 +75,7 @@ public class GameYaoYiYao {
 
     /**
      * 获取欢乐豆余额
-     * @return
+     * @return String
      */
     public String getTcoinDetail(){
         AndroidElement tCoinElement = Driver.getDriver().findElement(tCoinBtn);
@@ -69,7 +84,7 @@ public class GameYaoYiYao {
 
     /**
      * 获取余额值
-     * @return
+     * @return String
      */
     public String getAccountBlanceDetail(){
         AndroidElement element = Driver.getDriver().findElement(accountBlanceBtn);
@@ -77,10 +92,102 @@ public class GameYaoYiYao {
     }
 
     /**
-     * 获取押注额
+     * 获取押注额，不同余额有不同的默认押注额
+     * return Int
      */
-    public String getBetDetail(){
+    public String getBetAmount(){
         AndroidElement element = Driver.getDriver().findElement(betIpt);
         return element.getText();
     }
+
+    /**
+     * 点击减少投币
+     */
+    public String  cutAmount(){
+        Driver.getDriver().findElement(cutAmountBtn).click();
+        return this.getBetAmount();
+    }
+
+    /**
+     * 点击增加投币
+     */
+    public String addAmount(){
+        Driver.getDriver().findElement(addAmountBtn).click();
+        return this.getBetAmount();
+    }
+
+    /**
+     * 清空输入框,输入显示金额
+     */
+    public String  clearAmount(String betAmount){
+        AndroidElement betInputElement = Driver.getDriver().findElement(betIpt);
+        betInputElement.clear();
+        betInputElement.sendKeys(betAmount);
+        return this.getBetAmount();
+    }
+
+    /**
+     * 点击最大押注
+     */
+    public String clickMaxBet(){
+        Driver.getDriver().findElement(maxBetBtn).click();
+        return getBetAmount();
+    }
+
+    /**
+     * 游戏押注,
+     * @return
+     */
+    public String betGame(){
+        Driver.getDriver().findElement(betBtn).click();
+        Fuctions.waitShowElement(2);
+        //如果欢乐豆是大于最小押注额，则消耗欢乐豆
+        if (Integer.parseInt(getTcoinDetail()) >= 100 && Integer.parseInt(getTcoinDetail())>= Integer.parseInt(getBetAmount())){
+            return this.getTcoinDetail();
+        }else {
+            return this.getAccountBlanceDetail();
+        }
+
+    }
+
+    /**
+     * 福袋奖池金额，每次押注都会在变化
+     *
+     */
+    public String getPrizeAmount(){
+        return Driver.getDriver().findElement(prizeAmount).getText();
+    }
+
+    /**
+     * 排行榜显示
+     */
+    public boolean clickRankList(){
+        SwipePage.downSwipe();
+        Driver.getDriver().findElement(rankListBtn).click();
+        return Fuctions.isElementExist(rankPage);
+    }
+
+    /**
+     * 充值弹框显示,充值弹框有5个充值选项，10元，50元，100元，500元，默认10元
+     */
+    public boolean clickRechargeBtn(){
+        Driver.getDriver().findElement(rechargeBtn).click();
+        //充值页面显示
+        String value = Driver.getDriver().findElement(rechargeInput).getText();
+        if(Fuctions.isElementExist(rechargePage) &&
+                 Fuctions.isElementExist(rechargeAmount10) &&
+                 Fuctions.isElementExist(rechargeAmount50) &&
+                 Fuctions.isElementExist(rechargeAmount100) &&
+                 Fuctions.isElementExist(rechargeAmount500) &&
+                 Fuctions.isElementExist(goRecharge) &&
+                 value == "10"){
+            return true;
+        }else {return false;}
+
+    }
+
+    public String goRecharge(){
+        return "todo";
+    }
+    //todo 跑马灯，排行榜，充值，测试用例
 }
