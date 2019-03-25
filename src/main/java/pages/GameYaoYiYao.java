@@ -186,8 +186,9 @@ public class GameYaoYiYao {
 
     }
 
-    public String goRecharge(){
-        return "todo";
+    public RchargePage goRecharge(){
+        Driver.getDriver().findElement(goRecharge).click();
+        return new RchargePage();
     }
     //todo 跑马灯，排行榜，充值，测试用例
 }
