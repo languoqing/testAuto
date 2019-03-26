@@ -57,7 +57,7 @@ public class GameYaoYiYao {
     public boolean clikAccountBlance(){
         Fuctions.waitShowElement(2);
         //把页面往下拉
-        SwipePage.downSwipe();
+        //SwipePage.downSwipe();
         AndroidElement elementAccouont = Driver.getDriver().findElement(accountBlanceBtn);
         Fuctions.waitShowElement(5);
         elementAccouont.click();//点击余额
@@ -119,7 +119,7 @@ public class GameYaoYiYao {
     /**
      * 清空输入框,输入显示金额
      */
-    public String  clearAmount(String betAmount){
+    public String  cleanAmount(String betAmount){
         AndroidElement betInputElement = Driver.getDriver().findElement(betIpt);
         betInputElement.clear();
         betInputElement.sendKeys(betAmount);
@@ -162,7 +162,7 @@ public class GameYaoYiYao {
      * 排行榜显示
      */
     public boolean clickRankList(){
-        SwipePage.downSwipe();
+        //SwipePage.downSwipe();
         Driver.getDriver().findElement(rankListBtn).click();
         return Fuctions.isElementExist(rankPage);
     }
