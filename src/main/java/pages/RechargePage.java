@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 充值页面
  */
-public class RchargePage {
+public class RechargePage {
 
     //支付方式信息
     By tCoin = By.id("gameScore");
@@ -35,6 +35,7 @@ public class RchargePage {
     By cofirm = By.id("doConfirm");
     By payStatu = By.xpath("//*[@text='支付成功！']");
     By aliPage = By.id("com.ali.user.mobile.security.ui:id/titleWholeLayout");//支付宝页面
+
     //订单信息
     public List<AndroidElement> getOrderInfo(){
         List<AndroidElement> elements = Driver.getDriver().findElements(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.widget.ListView[1]"));
@@ -68,11 +69,11 @@ public class RchargePage {
 
     /**
      * 去充值 校验欢乐值，钻石，彩金，支付宝，微信
-     * @param pay :tcoin ; diamond;caiji;alipay;weixin
+     * @param pay :tDian ; diamond;caiji;alipay;weixin
      */
     public boolean goRecharge(String pay){
         switch (pay){
-            case "tcoin":
+            case "tDian":
                 Driver.getDriver().findElement(tCoin).click();
                 Driver.getDriver().findElement(cofirm).click();
                 Fuctions.waitShowElement(2);

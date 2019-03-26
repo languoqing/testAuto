@@ -1,16 +1,17 @@
 import driver.Driver;
+import io.appium.java_client.android.AndroidElement;
 import org.hamcrest.Condition;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.CommnPage;
-import pages.GameYaoYiYao;
-import pages.MainPage;
-import pages.SearchGamePage;
+import pages.*;
 import util.Fuctions;
 import util.SwipePage;
+
+import javax.xml.bind.SchemaOutputResolver;
+import java.util.List;
 
 
 public class TestGameYaoYiYao {
@@ -19,7 +20,7 @@ public class TestGameYaoYiYao {
     static MainPage mainPage;
     static SearchGamePage searchGamePage;
     static GameYaoYiYao gameYaoYiYao;
-
+    static RechargePage rechargePage;
     @BeforeClass
     static void beforAll(){
         mainPage = MainPage.startApp();
@@ -75,6 +76,8 @@ public class TestGameYaoYiYao {
     void testAddBetAmount(){
         String initAmoount = gameYaoYiYao.getBetAmount();
         String addAmount = gameYaoYiYao.addAmount();
+        System.out.println("当前押注金额："+initAmoount);
+        System.out.println("增加后押注金额："+addAmount);
         Assertions.assertTrue(Integer.parseInt(addAmount) >= Integer.parseInt(initAmoount));
     }
 
@@ -83,6 +86,8 @@ public class TestGameYaoYiYao {
     void testCutBetAmount(){
         String initAmoount = gameYaoYiYao.getBetAmount();
         String cutAmount = gameYaoYiYao.cutAmount();
+        System.out.println("当前押注金额："+initAmoount);
+        System.out.println("增加后押注金额："+cutAmount);
         Assertions.assertTrue(Integer.parseInt(cutAmount) >= Integer.parseInt(initAmoount));
     }
 
@@ -98,6 +103,8 @@ public class TestGameYaoYiYao {
     void testmaxBetAmount(){
         int accountBlance = Integer.parseInt(gameYaoYiYao.getAccountBlanceDetail());
         int betAmount = Integer.parseInt(gameYaoYiYao.clickMaxBet());
+        System.out.println("当前余额："+accountBlance);
+        System.out.println("最大押注额："+betAmount);
         Assertions.assertTrue(accountBlance == betAmount);
     }
 
@@ -107,7 +114,58 @@ public class TestGameYaoYiYao {
         int accountBlance = Integer.parseInt(gameYaoYiYao.getAccountBlanceDetail());//当前余额
         int betAmount = Integer.parseInt(gameYaoYiYao.cleanAmount("100"));//当前押注额
         int afterBetAccount = Integer.parseInt(gameYaoYiYao.betGame());
+        System.out.println("当前余额："+accountBlance);
+        System.out.println("当前押注额："+betAmount);
+        System.out.println("当前押注额："+afterBetAccount);
         Assertions.assertTrue(Math.abs((afterBetAccount - accountBlance)) >= betAmount);
+    }
+
+    @Test(priority = 10)
+    @DisplayName("充值弹框显示")
+    void testShowRecharge(){
+        Assertions.assertTrue(gameYaoYiYao.clickRechargeBtn());
+    }
+
+    @Test(priority = 11)
+    @DisplayName("充值输入金额1")
+    void testSendRechargeAmount(){
+        int orderNum = Integer.parseInt(gameYaoYiYao.getRechargeAmount("1"));
+        Assertions.assertTrue(1 == orderNum);
+    }
+
+    @Test(priority = 12)
+    @DisplayName("充值页面订单信息校验")
+    void testRechargeOrderInfo(){
+        gameYaoYiYao.getRechargeAmount("1");
+        if (gameYaoYiYao.clickRechargeBtn("1")){
+            rechargePage = gameYaoYiYao.goRecharge();
+            List<AndroidElement> orderInfo =  rechargePage.getOrderInfo();
+            for (int i=0;i<=orderInfo.size();i++){
+                orderInfo.get(i).getText();//TODO 取每个元素的text值对比
+                System.out.println(orderInfo.get(i).getText());
+            }
+        }
+
+    }
+
+    @Test(priority = 13)
+    @DisplayName("")
+    void testGoRecharge(){
+        boolean flag = false;
+        if (gameYaoYiYao.clickRechargeBtn("1")){
+            flag = rechargePage.isTrueRechargeOptions();
+        }
+        Assertions.assertTrue(flag);
+
+    }
+
+    @Test(priority = 14)
+    @DisplayName("充值1元")
+    void testRecharge(){
+        System.out.println("充值前余额：");//todo 余额静态变量
+        boolean rechargeStatus = rechargePage.goRecharge("tDian");
+        System.out.println("充值后余额：");
+
     }
 
     @AfterClass

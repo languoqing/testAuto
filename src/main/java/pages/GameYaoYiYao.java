@@ -4,7 +4,6 @@ import driver.Driver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import util.Fuctions;
-import util.SwipePage;
 
 
 /**
@@ -170,7 +169,7 @@ public class GameYaoYiYao {
     /**
      * 充值弹框显示,充值弹框有5个充值选项，10元，50元，100元，500元，默认10元
      */
-    public boolean clickRechargeBtn(){
+    public boolean clickRechargeBtn(String orderNum){
         Driver.getDriver().findElement(rechargeBtn).click();
         //充值页面显示
         String value = Driver.getDriver().findElement(rechargeInput).getText();
@@ -180,15 +179,46 @@ public class GameYaoYiYao {
                  Fuctions.isElementExist(rechargeAmount100) &&
                  Fuctions.isElementExist(rechargeAmount500) &&
                  Fuctions.isElementExist(goRecharge) &&
-                 value == "10"){
+                 value == orderNum){
             return true;
         }else {return false;}
 
     }
 
-    public RchargePage goRecharge(){
+    /**
+     * 默认金额10元
+     * @return
+     */
+    public boolean clickRechargeBtn(){
+        Driver.getDriver().findElement(rechargeBtn).click();
+        //充值页面显示
+        String value = Driver.getDriver().findElement(rechargeInput).getText();
+        if(Fuctions.isElementExist(rechargePage) &&
+                Fuctions.isElementExist(rechargeAmount10) &&
+                Fuctions.isElementExist(rechargeAmount50) &&
+                Fuctions.isElementExist(rechargeAmount100) &&
+                Fuctions.isElementExist(rechargeAmount500) &&
+                Fuctions.isElementExist(goRecharge) &&
+                value == "10"){
+            return true;
+        }else {return false;}
+
+    }
+
+
+    /**
+     * 选择充值金额
+     * @return
+     */
+    public String getRechargeAmount(String orderNum){
+        Driver.getDriver().findElement(rechargeInput).clear();
+        Driver.getDriver().findElement(rechargeInput).sendKeys(orderNum);
+        return Driver.getDriver().findElement(rechargeInput).getText();
+    }
+
+    public RechargePage goRecharge(){
         Driver.getDriver().findElement(goRecharge).click();
-        return new RchargePage();
+        return new RechargePage();
     }
     //todo 跑马灯，排行榜，充值，测试用例
 }
