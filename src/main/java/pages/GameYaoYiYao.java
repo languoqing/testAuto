@@ -120,7 +120,8 @@ public class GameYaoYiYao {
      */
     public String  cleanAmount(String betAmount){
         AndroidElement betInputElement = Driver.getDriver().findElement(betIpt);
-        betInputElement.clear();
+        Fuctions.clearText(betIpt);
+        Fuctions.waitShowElement(1);
         betInputElement.sendKeys(betAmount);
         return this.getBetAmount();
     }
@@ -211,7 +212,10 @@ public class GameYaoYiYao {
      * @return
      */
     public String getRechargeAmount(String orderNum){
-        Driver.getDriver().findElement(rechargeInput).clear();
+        //Driver.getDriver().findElement(rechargeInput).clear();
+        String text = Driver.getDriver().findElement(rechargeInput).getText();
+        Fuctions.clearText(rechargeInput);
+        Fuctions.waitShowElement(1);
         Driver.getDriver().findElement(rechargeInput).sendKeys(orderNum);
         return Driver.getDriver().findElement(rechargeInput).getText();
     }

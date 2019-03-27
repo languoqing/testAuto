@@ -4,8 +4,10 @@
     <list default="true" id="3d7bf713-f62d-4514-9c06-8385e161556c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RchargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RechargePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RechargePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RechargePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/Fuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Fuctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestGameYaoYiYao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGameYaoYiYao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/GameYaoYiYao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/GameYaoYiYao.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,22 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/CommnPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/RechargePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+            <state relative-caret-position="45">
+              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,22 +32,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-290">
-              <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/util/Fuctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="199">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,10 +44,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestTemp.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0-sources.jar!/io/appium/java_client/android/AndroidKeyCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="19">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="219" column="46" selection-start-line="219" selection-start-column="46" selection-end-line="219" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0-sources.jar!/io/appium/java_client/android/nativekey/PressesKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+              <folding>
+                <element signature="e#1433#1434#0" expanded="true" />
+                <element signature="e#1511#1512#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0-sources.jar!/io/appium/java_client/MobileCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="374" column="52" selection-start-line="374" selection-start-column="52" selection-end-line="374" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0-sources.jar!/io/appium/java_client/android/nativekey/KeyEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -77,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/driver/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="171">
+              <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,40 +110,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestGameYaoYiYao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="166" column="25" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
+            <state relative-caret-position="186">
+              <caret line="88" column="46" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4288#4289#0" expanded="true" />
-                <element signature="e#4310#4311#0" expanded="true" />
+                <element signature="e#1212#1213#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+                <element signature="e#6800#6801#0" expanded="true" />
+                <element signature="e#6841#6842#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/MethodSorters.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar!/org/springframework/core/annotation/Order.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -140,6 +136,10 @@
     <findStrings>
       <find>betIpt</find>
       <find>SwipePage</find>
+      <find>gameYaoYiYao.betGame()</find>
+      <find>clear()</find>
+      <find>clear</find>
+      <find>betGame()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,17 +159,17 @@
         <option value="$PROJECT_DIR$/src/test/java/TestYaml.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/WaitElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/CommnPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/SwipePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestTemp.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/Fuctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/RchargePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestTemp.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/RechargePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/driver/Driver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestGameYaoYiYao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/Fuctions.java" />
       </list>
     </option>
   </component>
@@ -186,6 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,7 +219,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA_Auto1768" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_Auto1768" type="b2602c69:ProjectViewProjectNode" />
@@ -236,12 +254,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553604729381" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553683503172" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -268,25 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestGameYaoYiYao">
-    <configuration name="TestGameYaoYiYao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Auto1768" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestGameYaoYiYao" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestGameYaoYiYao.testAShowAccountBlance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Auto1768" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestGameYaoYiYao" />
-      <option name="METHOD_NAME" value="testAShowAccountBlance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestGameYaoYiYao.testCleanBetAmount">
     <configuration name="TestGameYaoYiYao.testTCoinDetail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Auto1768" />
       <option name="PACKAGE_NAME" value="" />
@@ -317,13 +315,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGameYaoYiYao.testCleanBetAmount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Auto1768" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGameYaoYiYao" />
+      <option name="METHOD_NAME" value="testCleanBetAmount" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGameYaoYiYao.testmaxBetAmount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Auto1768" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGameYaoYiYao" />
+      <option name="METHOD_NAME" value="testmaxBetAmount" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestGameYaoYiYao.testCleanBetAmount" />
+        <item itemvalue="TestNG.TestGameYaoYiYao.testmaxBetAmount" />
         <item itemvalue="TestNG.TestGameYaoYiYao" />
-        <item itemvalue="JUnit.TestGameYaoYiYao.testTCoinDetail" />
         <item itemvalue="JUnit.TestTemp.test" />
-        <item itemvalue="JUnit.TestGameYaoYiYao" />
-        <item itemvalue="JUnit.TestGameYaoYiYao.testAShowAccountBlance" />
+        <item itemvalue="JUnit.TestGameYaoYiYao.testTCoinDetail" />
       </list>
     </recent_temporary>
   </component>
@@ -341,35 +363,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTemp_test - 2019.03.22 at 17h 50m 04s.xml">
-      <configuration name="TestTemp.test" configurationId="JUnit" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 08m 15s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestTemp_test - 2019.03.22 at 17h 50m 19s.xml">
-      <configuration name="TestTemp.test" configurationId="JUnit" />
+    <history-entry file="TestGameYaoYiYao_testmaxBetAmount - 2019.03.27 at 18h 09m 05s.xml">
+      <configuration name="TestGameYaoYiYao.testmaxBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestTemp_test - 2019.03.22 at 17h 50m 30s.xml">
-      <configuration name="TestTemp.test" configurationId="JUnit" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 10m 52s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestTemp_test - 2019.03.22 at 17h 50m 32s.xml">
-      <configuration name="TestTemp.test" configurationId="JUnit" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 19m 05s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestTemp_test - 2019.03.22 at 17h 50m 47s.xml">
-      <configuration name="TestTemp.test" configurationId="JUnit" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 24m 32s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestTemp_test - 2019.03.22 at 17h 50m 57s.xml">
-      <configuration name="TestTemp.test" configurationId="JUnit" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 26m 24s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestTemp_test - 2019.03.22 at 17h 51m 08s.xml">
-      <configuration name="TestTemp.test" configurationId="JUnit" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 29m 10s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestGameYaoYiYao_testTCoinDetail - 2019.03.24 at 09h 05m 44s.xml">
-      <configuration name="TestGameYaoYiYao.testTCoinDetail" configurationId="JUnit" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 33m 50s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestGameYaoYiYao - 2019.03.25 at 14h 45m 21s.xml">
-      <configuration name="TestGameYaoYiYao" configurationId="TestNG" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 39m 39s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestGameYaoYiYao - 2019.03.25 at 14h 51m 19s.xml">
-      <configuration name="TestGameYaoYiYao" configurationId="TestNG" />
+    <history-entry file="TestGameYaoYiYao_testCleanBetAmount - 2019.03.27 at 18h 41m 16s.xml">
+      <configuration name="TestGameYaoYiYao.testCleanBetAmount" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -390,14 +412,14 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.29727685" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.30181542" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.34754097" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.4147541" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.4180328" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -666,64 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
-          <caret line="140" column="18" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/CommnPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/Fuctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestTemp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/driver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -751,32 +719,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/RechargePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestTemp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        <state relative-caret-position="190">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestGameYaoYiYao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/SearchGamePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="166" column="25" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
+        <state relative-caret-position="198">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4288#4289#0" expanded="true" />
-            <element signature="e#4310#4311#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar!/com/google/common/collect/ImmutableMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="105" column="34" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="34" />
+          <folding>
+            <element signature="e#3665#3666#0" expanded="true" />
+            <element signature="e#3741#3742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/driver/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0.jar!/io/appium/java_client/android/nativekey/KeyEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/RechargePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0.jar!/io/appium/java_client/android/AndroidKeyCode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="177" column="24" selection-start-line="177" selection-start-column="8" selection-end-line="177" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameYaoYiYao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
+        <state relative-caret-position="338">
+          <caret line="219" column="46" selection-start-line="219" selection-start-column="46" selection-end-line="219" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0.jar!/io/appium/java_client/MobileCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="194" column="92" selection-start-line="194" selection-start-column="92" selection-end-line="194" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0.jar!/io/appium/java_client/android/nativekey/PressesKey.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+          <folding>
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0-sources.jar!/io/appium/java_client/MobileCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="374" column="52" selection-start-line="374" selection-start-column="52" selection-end-line="374" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0-sources.jar!/io/appium/java_client/android/nativekey/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestGameYaoYiYao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="88" column="46" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#6800#6801#0" expanded="true" />
+            <element signature="e#6841#6842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0-sources.jar!/io/appium/java_client/android/AndroidKeyCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/6.1.0/java-client-6.1.0-sources.jar!/io/appium/java_client/android/nativekey/PressesKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding>
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/Fuctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

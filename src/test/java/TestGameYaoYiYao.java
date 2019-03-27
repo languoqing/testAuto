@@ -1,6 +1,5 @@
 import driver.Driver;
 import io.appium.java_client.android.AndroidElement;
-import org.hamcrest.Condition;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.testng.annotations.AfterClass;
@@ -9,8 +8,6 @@ import org.testng.annotations.Test;
 import pages.*;
 import util.Fuctions;
 import util.SwipePage;
-
-import javax.xml.bind.SchemaOutputResolver;
 import java.util.List;
 
 
@@ -21,6 +18,8 @@ public class TestGameYaoYiYao {
     static SearchGamePage searchGamePage;
     static GameYaoYiYao gameYaoYiYao;
     static RechargePage rechargePage;
+    static int accountBlance;
+    static int tcoin;
     @BeforeClass
     static void beforAll(){
         mainPage = MainPage.startApp();
@@ -33,36 +32,31 @@ public class TestGameYaoYiYao {
         SwipePage.downSwipe();//往下拉，显示整页
     }
 
-    @Test(priority = 0)
-    @DisplayName("点击余额")
+    @Test(priority = 1,description = "点击余额")
      void testAShowAccountBlance(){
         Assertions.assertTrue(gameYaoYiYao.clikAccountBlance());
     }
 
-    @Test(priority = 1)
-    @DisplayName("关闭余额显示")
+    @Test(priority = 2,description = "关闭余额显示")
     void testCloseAccountBlance(){
         Assertions.assertFalse(gameYaoYiYao.clickCloseAccountBlance());
     }
 
-    @Test(priority = 2)
-    @DisplayName("显示欢乐豆值")
+    @Test(priority = 2,description = "显示欢乐豆值")
     void testTCoinDetail(){
-        String detail = gameYaoYiYao.getTcoinDetail();
-        System.out.println("欢乐豆余额："+detail);
-        Assertions.assertTrue(Integer.parseInt(detail) >= 0);
+        tcoin = Integer.parseInt(gameYaoYiYao.getTcoinDetail());
+        System.out.println("欢乐豆余额："+tcoin);
+        Assertions.assertTrue(tcoin >= 0);
     }
 
-    @Test(priority = 3)
-    @DisplayName("显示余额值")
+    @Test(priority = 3,description = "显示余额值")
     void testAccountBlanceDetail(){
-        String accountDetail = gameYaoYiYao.getAccountBlanceDetail();
-        System.out.println("余额值："+accountDetail);
-        Assertions.assertTrue(Integer.parseInt(accountDetail) >= 0);
+        accountBlance = Integer.parseInt(gameYaoYiYao.getAccountBlanceDetail());
+        System.out.println("余额值："+accountBlance);
+        Assertions.assertTrue(accountBlance >= 0);
     }
 
-    @Test(priority = 4)
-    @DisplayName("获取默认押注金额")
+    @Test(priority = 4,description = "获取默认押注金额")
     void testInitBetAmount(){
         //先获取余额，判断默认押注额//todo 后续再更新
         //String AccountBlance = gameYaoYiYao.getAccountBlanceDetail();
@@ -71,8 +65,7 @@ public class TestGameYaoYiYao {
         Assertions.assertTrue(Integer.parseInt(betAmount) >= 100); //最小押注额100
     }
 
-    @Test(priority = 5)
-    @DisplayName("增加押注金额")
+    @Test(priority = 5,description = "增加押注金额")
     void testAddBetAmount(){
         String initAmoount = gameYaoYiYao.getBetAmount();
         String addAmount = gameYaoYiYao.addAmount();
@@ -81,25 +74,23 @@ public class TestGameYaoYiYao {
         Assertions.assertTrue(Integer.parseInt(addAmount) >= Integer.parseInt(initAmoount));
     }
 
-    @Test(priority = 6)
-    @DisplayName("减少押注金额")
+    @Test(priority = 6,description = "减少押注金额")
     void testCutBetAmount(){
         String initAmoount = gameYaoYiYao.getBetAmount();
         String cutAmount = gameYaoYiYao.cutAmount();
         System.out.println("当前押注金额："+initAmoount);
-        System.out.println("增加后押注金额："+cutAmount);
+        System.out.println("扣减后押注金额："+cutAmount);
         Assertions.assertTrue(Integer.parseInt(cutAmount) >= Integer.parseInt(initAmoount));
     }
 
-    @Test(priority = 7,parameters = "bet")
-    @DisplayName("输入押注额")
+    @Test(priority = 1,description = "输入押注额")
     void testCleanBetAmount(){
         //todo 通过testng配置文件配置参数
         String betAmount = gameYaoYiYao.cleanAmount("100");
+        Assertions.assertTrue(100 == Integer.parseInt(betAmount));
     }
 
-    @Test(priority = 8)
-    @DisplayName("最大押注")
+    @Test(priority = 8,description = "最大押注")
     void testmaxBetAmount(){
         int accountBlance = Integer.parseInt(gameYaoYiYao.getAccountBlanceDetail());
         int betAmount = Integer.parseInt(gameYaoYiYao.clickMaxBet());
@@ -108,33 +99,43 @@ public class TestGameYaoYiYao {
         Assertions.assertTrue(accountBlance == betAmount);
     }
 
-    @Test(priority = 9)
-    @DisplayName("押注")
+    @Test(priority = 9,dependsOnMethods = "testCleanBetAmount",description = "押注")
     void testBetGame(){
-        int accountBlance = Integer.parseInt(gameYaoYiYao.getAccountBlanceDetail());//当前余额
         int betAmount = Integer.parseInt(gameYaoYiYao.cleanAmount("100"));//当前押注额
-        int afterBetAccount = Integer.parseInt(gameYaoYiYao.betGame());
-        System.out.println("当前余额："+accountBlance);
-        System.out.println("当前押注额："+betAmount);
-        System.out.println("当前押注额："+afterBetAccount);
-        Assertions.assertTrue(Math.abs((afterBetAccount - accountBlance)) >= betAmount);
+        int afterBetAccount;
+        if (tcoin >= 100){ //t币足够用T币押注
+            int afterTCoin = Integer.parseInt(gameYaoYiYao.betGame());
+            afterBetAccount = Integer.parseInt(gameYaoYiYao.getAccountBlanceDetail());
+            System.out.println("当前欢乐豆："+tcoin);
+            System.out.println("当前押注额："+betAmount);
+            System.out.println("押注后欢乐豆："+afterTCoin);
+            System.out.println("押注后余额，欢乐豆押注："+afterBetAccount);
+            Assertions.assertTrue((tcoin - betAmount == afterTCoin)
+                    && (afterBetAccount - accountBlance >= 0) );
+            tcoin = afterTCoin;
+        }else{
+            afterBetAccount = Integer.parseInt(gameYaoYiYao.betGame());
+            System.out.println("当前余额："+accountBlance);
+            System.out.println("当前押注额："+betAmount);
+            System.out.println("押注后余额："+afterBetAccount);
+            Assertions.assertTrue(Math.abs((afterBetAccount - accountBlance)) >= betAmount);
+            accountBlance = afterBetAccount;//全局 余额保持最新
+        }
+
     }
 
-    @Test(priority = 10)
-    @DisplayName("充值弹框显示")
+    @Test(priority = 10,description = "充值弹框显示")
     void testShowRecharge(){
         Assertions.assertTrue(gameYaoYiYao.clickRechargeBtn());
     }
 
-    @Test(priority = 11)
-    @DisplayName("充值输入金额1")
+    @Test(priority = 11,description = "充值输入金额1")
     void testSendRechargeAmount(){
         int orderNum = Integer.parseInt(gameYaoYiYao.getRechargeAmount("1"));
         Assertions.assertTrue(1 == orderNum);
     }
 
-    @Test(priority = 12)
-    @DisplayName("充值页面订单信息校验")
+    @Test(priority = 12,dependsOnMethods = "testShowRecharge",description = "充值页面订单信息校验")
     void testRechargeOrderInfo(){
         gameYaoYiYao.getRechargeAmount("1");
         if (gameYaoYiYao.clickRechargeBtn("1")){
@@ -148,8 +149,7 @@ public class TestGameYaoYiYao {
 
     }
 
-    @Test(priority = 13)
-    @DisplayName("")
+    @Test(priority = 13,description = "充值页面")
     void testGoRecharge(){
         boolean flag = false;
         if (gameYaoYiYao.clickRechargeBtn("1")){
@@ -159,12 +159,18 @@ public class TestGameYaoYiYao {
 
     }
 
-    @Test(priority = 14)
-    @DisplayName("充值1元")
+    @Test(priority = 14,description = "充值1元")
     void testRecharge(){
-        System.out.println("充值前余额：");//todo 余额静态变量
+        System.out.println("充值前余额："+accountBlance);//todo 余额静态变量
+        System.out.println("充值前欢乐豆："+tcoin);//todo 余额静态变量
         boolean rechargeStatus = rechargePage.goRecharge("tDian");
-        System.out.println("充值后余额：");
+        Fuctions.waitShowElement(3);
+        int afterAccountBlance = Integer.parseInt(gameYaoYiYao.getAccountBlanceDetail());
+        int afterTCoin = Integer.parseInt(gameYaoYiYao.getTcoinDetail());
+        System.out.println("充值后余额："+afterAccountBlance);
+        System.out.println("充值后余额："+afterTCoin);
+        Assertions.assertTrue((accountBlance - 500 == afterAccountBlance )
+                                            && (tcoin + 500) == afterTCoin);
 
     }
 

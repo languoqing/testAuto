@@ -5,6 +5,7 @@ import driver.Driver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import util.Fuctions;
+import util.YamlConfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +36,7 @@ public class RechargePage {
     By cofirm = By.id("doConfirm");
     By payStatu = By.xpath("//*[@text='支付成功！']");
     By aliPage = By.id("com.ali.user.mobile.security.ui:id/titleWholeLayout");//支付宝页面
+    By statusConfirm = By.xpath("//*[@text='确认']");
 
     //订单信息
     public List<AndroidElement> getOrderInfo(){
@@ -101,5 +103,10 @@ public class RechargePage {
         }
         System.out.println("是用什么支付方式");
         return false;
+    }
+
+    public void goBackGamePage(){
+
+        Driver.getDriver().findElement(statusConfirm).click();
     }
 }
