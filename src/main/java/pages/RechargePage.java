@@ -36,18 +36,39 @@ public class RechargePage {
     By cofirm = By.id("doConfirm");
     By payStatu = By.xpath("//*[@text='支付成功！']");
     By aliPage = By.id("com.ali.user.mobile.security.ui:id/titleWholeLayout");//支付宝页面
-    By statusConfirm = By.xpath("//*[@text='确认']");
+    By statusConfirm = By.xpath("//*[@text='确 认']"); //支付成功确认按钮
 
     //订单信息
-    public List<AndroidElement> getOrderInfo(){
-        List<AndroidElement> elements = Driver.getDriver().findElements(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.widget.ListView[1]"));
-        return elements;
+    public ArrayList getOrderInfo(){
+        String userInfo = Driver.getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.widget.ListView[1]/android.view.View[1]")).getText();
+        String prdInfo = Driver.getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.widget.ListView[1]/android.view.View[2]")).getText();
+        String amountInfo = Driver.getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.widget.ListView[1]/android.view.View[3]")).getText();
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add(userInfo);
+        arrayList.add(prdInfo);
+        arrayList.add(amountInfo);
+        return arrayList;
     }
 
     /**
      * 支付方式校验，欢乐值抵扣，钻石支付，彩金，支付宝，微信必校验显示
      */
     public boolean isTrueRechargeOptions(){
+        System.out.println("1:"+Fuctions.isElementExist(tCoin));
+        System.out.println("2:"+Fuctions.isElementExist(diamond));
+        System.out.println("3:"+Fuctions.isElementExist(caijin));
+        System.out.println("4:"+Fuctions.isElementExist(aliPay));
+        System.out.println("5:"+Fuctions.isElementExist(weixinPay));
+        System.out.println("6:"+Fuctions.isElementExist(yinlianPay));
+        System.out.println("7:"+Fuctions.isElementExist(wltPay));
+        System.out.println("8:"+Fuctions.isElementExist(qqPay));
+        System.out.println("9:"+Fuctions.isElementExist(yqbPay));
+        System.out.println("10:"+Fuctions.isElementExist(mobilePay));
+        System.out.println("11:"+Fuctions.isElementExist(yqbPay));
+        System.out.println("12:"+Fuctions.isElementExist(ydjf));
+        System.out.println("13:"+Fuctions.isElementExist(hys));
+        System.out.println("14:"+Fuctions.isElementExist(zzb));
+        System.out.println("15:"+Fuctions.isElementExist(sft));
         if(Fuctions.isElementExist(tCoin) &&
             Fuctions.isElementExist(diamond) &&
             Fuctions.isElementExist(caijin) &&
@@ -108,5 +129,10 @@ public class RechargePage {
     public void goBackGamePage(){
 
         Driver.getDriver().findElement(statusConfirm).click();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

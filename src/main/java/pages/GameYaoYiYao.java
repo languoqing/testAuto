@@ -20,9 +20,9 @@ public class GameYaoYiYao {
     //押注框
     By betIpt = By.id("ipt_yazhu");
     //减押注
-    By cutAmountBtn = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[9]/android.view.View[1]");
+    By cutAmountBtn = By.xpath("//*[@text='-']");
     //加押注
-    By addAmountBtn = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[9]/android.view.View[2]");
+    By addAmountBtn = By.xpath("//*[@text='+']");
     //最大押注
     By maxBetBtn = By.id("maxBet");
     //充值按钮
@@ -36,7 +36,7 @@ public class GameYaoYiYao {
     //福袋奖池金额
     By prizeAmount = By.id("Cumulative");
     //充值按钮
-    By rechargeBtn = By.xpath("//*[@text='充']");
+    By rechargeBtn = By.id("openChong");
     //充值弹框
     By rechargePage = By.id("FuPurse");
     //充值按钮
@@ -102,17 +102,17 @@ public class GameYaoYiYao {
     /**
      * 点击减少投币
      */
-    public String  cutAmount(){
+    public void  cutAmount(){
         Driver.getDriver().findElement(cutAmountBtn).click();
-        return this.getBetAmount();
+
     }
 
     /**
      * 点击增加投币
      */
-    public String addAmount(){
+    public void addAmount(){
         Driver.getDriver().findElement(addAmountBtn).click();
-        return this.getBetAmount();
+
     }
 
     /**
@@ -120,7 +120,9 @@ public class GameYaoYiYao {
      */
     public String  cleanAmount(String betAmount){
         AndroidElement betInputElement = Driver.getDriver().findElement(betIpt);
+        betInputElement.click();
         Fuctions.clearText(betIpt);
+//        betInputElement.clear();
         Fuctions.waitShowElement(1);
         betInputElement.sendKeys(betAmount);
         return this.getBetAmount();
@@ -129,25 +131,17 @@ public class GameYaoYiYao {
     /**
      * 点击最大押注
      */
-    public String clickMaxBet(){
+    public void clickMaxBet(){
         Driver.getDriver().findElement(maxBetBtn).click();
-        return getBetAmount();
     }
 
     /**
      * 游戏押注,
      * @return
      */
-    public String betGame(){
+    public void betGame(){
         Driver.getDriver().findElement(betBtn).click();
         Fuctions.waitShowElement(2);
-        //如果欢乐豆是大于最小押注额，则消耗欢乐豆
-        if (Integer.parseInt(getTcoinDetail()) >= 100 && Integer.parseInt(getTcoinDetail())>= Integer.parseInt(getBetAmount())){
-            return this.getTcoinDetail();
-        }else {
-            return this.getAccountBlanceDetail();
-        }
-
     }
 
     /**
@@ -170,10 +164,10 @@ public class GameYaoYiYao {
     /**
      * 充值弹框显示,充值弹框有5个充值选项，10元，50元，100元，500元，默认10元
      */
-    public boolean clickRechargeBtn(String orderNum){
+    public boolean clickRechargeBtn(int orderNum){
         Driver.getDriver().findElement(rechargeBtn).click();
         //充值页面显示
-        String value = Driver.getDriver().findElement(rechargeInput).getText();
+        int value = Integer.parseInt(Driver.getDriver().findElement(rechargeInput).getText());
         if(Fuctions.isElementExist(rechargePage) &&
                  Fuctions.isElementExist(rechargeAmount10) &&
                  Fuctions.isElementExist(rechargeAmount50) &&
@@ -192,15 +186,17 @@ public class GameYaoYiYao {
      */
     public boolean clickRechargeBtn(){
         Driver.getDriver().findElement(rechargeBtn).click();
+        Fuctions.waitShowElement(2);
         //充值页面显示
-        String value = Driver.getDriver().findElement(rechargeInput).getText();
+        int value = Integer.parseInt(Driver.getDriver().findElement(rechargeInput).getText());
+        System.out.println("充值弹框输入框值："+value);
         if(Fuctions.isElementExist(rechargePage) &&
                 Fuctions.isElementExist(rechargeAmount10) &&
                 Fuctions.isElementExist(rechargeAmount50) &&
                 Fuctions.isElementExist(rechargeAmount100) &&
                 Fuctions.isElementExist(rechargeAmount500) &&
                 Fuctions.isElementExist(goRecharge) &&
-                value == "10"){
+                value == 10){
             return true;
         }else {return false;}
 
@@ -212,9 +208,10 @@ public class GameYaoYiYao {
      * @return
      */
     public String getRechargeAmount(String orderNum){
-        //Driver.getDriver().findElement(rechargeInput).clear();
-        String text = Driver.getDriver().findElement(rechargeInput).getText();
-        Fuctions.clearText(rechargeInput);
+        Driver.getDriver().findElement(rechargeInput).click();
+        Driver.getDriver().findElement(rechargeInput).clear();
+        //String text = Driver.getDriver().findElement(rechargeInput).getText();
+        // Fuctions.clearText(rechargeInput);
         Fuctions.waitShowElement(1);
         Driver.getDriver().findElement(rechargeInput).sendKeys(orderNum);
         return Driver.getDriver().findElement(rechargeInput).getText();
